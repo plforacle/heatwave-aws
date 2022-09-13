@@ -1,68 +1,57 @@
 # Introduction
 
-This workshop is based on [MySQL HeatWave User Guide: Iris Data Set Machine Learning Quickstart](https://dev.mysql.com/doc/heatwave/en/hwml-iris-example.html)
 
-HeatWave is a massively parallel, high-performance, in-memory query accelerator that accelerates MySQL performance by orders of magnitude for analytics workloads, mixed workloads, and machine learning. A HeatWave Cluster consists of a MySQL DB System and HeatWave nodes that store data in memory and process analytics and machine learning queries.
+MySQL HeatWave is a massively parallel, high performance, in-memory query accelerator for MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability
+
+MySQL HeatWave is a massively parallel, high performance, in-memory query accelerator for MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability
+
+Below is an example of a MySQL HeatWave deployment.
+
+![heatwave aws architect](./images/heatwave-aws-architect.png "heatwave-aws-architect")
 
 ## About this Workshop
 
-In this workshop, you will use the capabilities of HeatWave Machine Learning (ML) to implement a project which classifies species of Iris flowers. This project is also known as the Hello World version of Machine Learning. You will create and use a predictive machine learning model to step through preparing data, using the ML\_TRAIN routine to train a model, and using ML\_PREDICT\_ and ML\_EXPLAIN\_ routines to generate predictions and explanations. Finally, you will assess the quality of a model using the ML_SCORE routine and how to view a model explanation to understand how your model works.
-
-The workshop uses the publicly available [Iris Data Set] (https://archive.ics.uci.edu/ml/datasets/Iris)  from the UCI Machine Learning Repository.
-
-The Iris Data Set has the following data, where the sepal and petal features are used to predict the class label, which is
-
-**type of Iris plant:**
-
-- sepal length (cm)
-- sepal width (cm)
-- petal length (cm)
-- petal width (cm)
-
-**class of possible values:**
-
-- Iris Setosa
-- Iris Versicolour
-- Iris Virginica
-
-![three Iris flowers species](./images/iris-flowers.png "iris-flowers")
-
-The sepal is the part that encases and protects the flower when it is in the bud stage. A petal is a leaflike part that is often colorful.
+This quick start guide provides step-by-step guide on creating and managing MySQL HeatWave on the MySQL console. For details on MySQL HeatWave functionalities, please refer to [MySQL HeatWave user guide] (https://dev.mysql.com/doc/heatwave/en/)
 
 _Estimated Time:_ 2 hours
 
 ### About Product/Technology
 
-HeatWave ML makes it easy to use machine learning, whether you are a novice user or an experienced ML practitioner. You provide the data, and HeatWave ML analyzes the characteristics of the data and creates an optimized machine learning model that you can use to generate predictions and explanations. An ML model makes predictions by identifying patterns in your data and applying those patterns to unseen data. HeatWave ML explanations help you understand how predictions are made, such as which features of a dataset contribute most to a prediction.
+HMySQL HeatWave is the only service that combines OLTP, analytics, machine learning, and machine learning-based automation within a single MySQL database. AWS users can now run transaction processing, analytics, and machine learning workloads in one service, without requiring time-consuming ETL duplication between separate databases such as Amazon Aurora for transaction processing and Amazon Redshift or Snowflake on AWS for analytics and SageMaker for machine learning
 
-  ![Machine learning is easier with MySQL HeatWave](./images/heatwave-ml-easy.png "heatwave-ml-easy")
+
 
 ### Objectives
 
 In this lab, you will be guided through the following steps:
 
-- Create SSH Key on Oracle Cloud Infrastructure Cloud Shell
-- Create MySQL Database for HeatWave (DB System) instance
-- Setup Compute instance
-- Connect to DB System using MySQL Shell through Compute Instance / Cloud Shell
-- Add HeatWave cluster to DB System
-- Prepare and load training and test data.
-- Train the machine learning model.
-- Make predictions with test data using a trained model
-- Run explanations on test data using a trained model
-- Score your machine learning model to assess its reliability
-- View a model explanation to understand how the model makes predictions
+- Create MySQL HeatWave Cluster
+- Access your MySQL DB System
+- Load Sample TPCH Data to MySQL DB System
+- Provision HeatWave Cluster
+- Run TPCH Queries on HeatWave Cluster in Workspaces
+- Load sample data to HeatWave Cluster
+- Run queries in HeatWave Cluster
+- Monitor HeatWave performance
+- Test MySQL HeatWave with Your Own Data
+- Migrate Data from on-premise MySQL to MySQL HeatWave
+- Import MySQL-compatible CSV formatted Data to MySQL HeatWave
+- Load Data to HeatWave Cluster
 
 ### Prerequisites
 
-- An Oracle Free Tier, Paid or LiveLabs Cloud Account
-- Some Experience with MySQL Shell - [MySQL shell] (https://dev.MySQL.com/doc/MySQL-shell/8.0/en/)
+Before you begin using MySQL HeatWave, please make sure you have the following
+information from the MySQL HeatWave team:
 
+1. MySQL HeatWave OCI Cloud Account Name
+2. Web Console Basic Authentication Credentials. These credentials grant you access to the
+site while it is still in Beta. They should have been provided to you from the …
+3. User Credentials to log on to mysqlheatwave.com. You should have provided your email address to the MySQL HeatWave team for the user account creation. Your email address will be used as the login username, and the password should be provided to you from the MySQL HeatWave team.
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Salil Pradhan, Principal Product Manager,
+- **Contributors** - Mandy Pang, Principal Product Manager,
 Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2022
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, September 2022
