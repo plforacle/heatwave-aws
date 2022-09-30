@@ -69,7 +69,7 @@ In this lab, you will be guided through the following tasks:
     2.6.3 X Plugin Port: 33060
     Setup HeatWave Cluster(s)
 
-    ![CREATE](./images/create-db-cluster.ong "create dbcluster")
+    ![CREATE](./images/create-db-cluster.png "create dbcluster")
 
     2.7 Press “Create” to create the DB System
 
