@@ -10,7 +10,7 @@ _Estimated Time:_ 10 minutes
 
 In this lab, you will be guided through the following task:
 
-- Load Iris Data into HeatWave
+- ???
 
 ### Prerequisites
 
@@ -21,17 +21,40 @@ In this lab, you will be guided through the following task:
 ## Task 1: Create Cluster
 
 1. On the MySQL DB System web console, go to the “HeatWave Clusters” tab
-
 2. Press “Create HeatWave Cluster” button
-
 3. On the “Create HeatWave Cluster” panel, enter:
 
     a. Display Name
+
     b. Description
+
     c. Select the MySQL DB System that you created in the previous step from the dropdown
-list. 
+list.
 
+    d. Select the cluster size (minimum of 2 nodes).
+    NOTE: for beta testing, each HeatWave node can handle ~200GB of data. If you have
+    500GB of data, you will need 3 HeatWave nodes
 
+4. Press “Create”
+5. Click the created HeatWave cluster to see the details
+
+## Task 2: Run TPCH Queries on HeatWave Cluster in Workspaces
+
+Before you can run queries in HeatWave, you need to first load the data from MySQL to
+HeatWave. You can use “Workspaces” on the console to load data and run queries in HeatWave.
+
+1. Load sample data to HeatWave Cluster
+
+    a. Go to “Workspaces” tab on the web console
+
+    b. Select the DB System that you want to connect to, enter the admin user credentials, and
+click “Connect”
+
+    c. Select the tpch database on the left panel and press “Load” to load tables to HeatWave
+
+    d. Press “Confirm Load” to load the data to HeatWave
+
+    e. Once the tables are loaded, you are ready to run queries in the Workspaces
 
 ## Learn More
 

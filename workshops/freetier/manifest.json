@@ -24,9 +24,15 @@
         },
 
         {
-          "title": "Lab 4: Build HeatWave ML Web App with PHP",
-          "filename": "../../develop/develop.md"
+          "title": "Lab 4: Run queries in HeatWave Cluster",
+          "filename": "../../run-queries/run-queries.md"
         },
+
+        {
+          "title": "Lab 5:Monitor HeatWave",
+          "filename": "../../monitor-heatwave/monitor-heatwave.md"
+        },
+
 
         {
             "title": "Need Help?",
