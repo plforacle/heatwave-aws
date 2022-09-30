@@ -19,8 +19,8 @@
         },
 
         {
-            "title": "Lab 3: Build HeatWave ML with SQL",
-            "filename": "../../do-heatwave-ml/do-heatwave-ml.md"
+            "title": "Lab 3: Provision HeatWave Cluster",
+            "filename": "../../provision-cluster/provision-cluster.md"
         },
 
         {
