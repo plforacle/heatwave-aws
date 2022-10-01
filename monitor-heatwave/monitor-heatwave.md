@@ -23,7 +23,11 @@ In this lab, you will be guided through the following task:
 You can monitor HeatWave performance on the “Performance” tab on the web console.
 MySQL and HeatWave Cluster performance:
 
+![MONITOR](./images/performace-monitor.png "performance  monitor")
+
 Query monitoring and performance:
+
+![MONITOR](./images/execution-monitor.png "execution  monitor")
 
 ## Test MySQL HeatWave with Your Own Data
 

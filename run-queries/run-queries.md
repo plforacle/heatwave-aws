@@ -22,6 +22,8 @@ In this lab, you will be guided through the following task:
 
 Once data is loaded, you can run TPCH queries in the Query Editor in Workspaces.
 
+![LOAD](./images/workspace-tpch-query.png "workspace tpch query")
+
 Here are a few TPCH queries:
 
 1. Q1
@@ -137,6 +139,8 @@ Here are a few TPCH queries:
 
 4. run "diff -y rapid_rt_profiles.log mysql_rt_profiles.log", and you can see the runtime differences
 running on MySQL HeatWave vs MySQL
+
+![LOAD](./images/diff-table.png "diff table")
 
 ## Learn More
 
