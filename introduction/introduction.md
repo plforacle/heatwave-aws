@@ -1,41 +1,44 @@
 # Introduction
 
-MySQL HeatWave is a massively parallel, high performance, in-memory query accelerator for MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability
+MySQL HeatWave on AWS is a fully managed service, developed and supported by the MySQL team at Oracle. Oracle automates tasks such as database and operating system patching. You are responsible for managing your data, schema designs, and access.
 
-MySQL HeatWave is a massively parallel, high performance, in-memory query accelerator for MySQL Database Service that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. It is the only service that enables customers to run OLTP and OLAP workloads directly from their MySQL database without the need of ETL process. MySQL Autopilot uses advanced machine-learning techniques to automates the database lifecycle operations including provisioning, data loading, query processing, and error handling. This minimizes manual administrative work and further improves HeatWave’s usability, performance, and scalability
+With MySQL HeatWave on AWS, you can create and manage a MySQL DB System with a HeatWave Cluster for your AWS applications.
 
-Below is an example of a MySQL HeatWave deployment.
+The MySQL Database is built on the MySQL Enterprise Edition Server, which allows developers to quickly create and deploy secure cloud native applications using the world's most popular open source database.
 
-![heatwave aws architect](./images/heatwave-aws-architect.png "heatwave-aws-architect")
+HeatWave is a massively parallel, high performance, in-memory query accelerator that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. With MySQL HeatWave on AWS, you can provision DB Systems and HeatWave Clusters. When a HeatWave Cluster is enabled, queries that meet certain prerequisites are automatically offloaded from the MySQL DB System to the HeatWave Cluster for accelerated processing.
+
+Below is an example of a MySQL HeatWave on AWS deployment.
+
+![MySQL HeatWave on AWS deployment](./images/heatwave-aws-architect.png "heatwave aws architect")
 
 ## About this Workshop
 
-This quick start guide provides step-by-step guide on creating and managing MySQL HeatWave on the MySQL console. For details on MySQL HeatWave functionalities, please refer to [MySQL HeatWave user guide] (https://dev.mysql.com/doc/heatwave/en/)
+This quick start guide provides step-by-step instructions on creating and managing  MySQL HeatWave on AWS. It covers registration, account management, user and group management, using the HeatWave Console to create and manage DB Systems and HeatWave Clusters, connecting, importing data, configuration, and performance monitoring.
 
 _Estimated Time:_ 2 hours
 
 ### About Product/Technology
 
-HMySQL HeatWave is the only service that combines OLTP, analytics, machine learning, and machine learning-based automation within a single MySQL database. AWS users can now run transaction processing, analytics, and machine learning workloads in one service, without requiring time-consuming ETL duplication between separate databases such as Amazon Aurora for transaction processing and Amazon Redshift or Snowflake on AWS for analytics and SageMaker for machine learning
+MySQL HeatWave on AWS is integrated with Oracle Cloud Infrastructure (OCI) for identity and access management, and for billing and cost management.
 
+When you sign up for MySQL HeatWave on AWS, you are directed to OCI where you must sign up for an Oracle Cloud Account if you do not have one. After signing up, you are directed to the OCI Console to complete the sign-up process. When signing in to the MySQL HeatWave Console, you are seamlessly directed to OCI for authentication and then back to the MySQL HeatWave Console.
 
+Identity & access management and billing for MySQL HeatWave on AWS is managed in OCI. For more information, see Billing.
+
+The following diagram illustrates MySQL HeatWave on AWS integration with Oracle Cloud Infrastructure (OCI).
+
+![MySQL HeatWave on AWS and OCI Integrationt](./images/mhds-hw-oci-integration.png "mhds hw oci integration")
 
 ### Objectives
 
 In this lab, you will be guided through the following steps:
 
-- Create MySQL HeatWave Cluster
-- Access your MySQL DB System
-- Load Sample TPCH Data to MySQL DB System
+- Create MySQL HeatWave and Cluster
+- Access and Load your MySQL DB System
 - Provision HeatWave Cluster
-- Run TPCH Queries on HeatWave Cluster in Workspaces
-- Load sample data to HeatWave Cluster
 - Run queries in HeatWave Cluster
-- Monitor HeatWave performance
-- Test MySQL HeatWave with Your Own Data
-- Migrate Data from on-premise MySQL to MySQL HeatWave
-- Import MySQL-compatible CSV formatted Data to MySQL HeatWave
-- Load Data to HeatWave Cluster
+- Monitor HeatWave
 
 ### Prerequisites
 

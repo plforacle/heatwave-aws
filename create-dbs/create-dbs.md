@@ -2,15 +2,21 @@
 
 ## Introduction
 
-In this lab, you will create and configure ????
+You can access MySQL HeatWave on AWS using the MySQL HeatWave Console (a browser-based interface).
 
-_Estimated Time:_ 20 minutes
+If you have not yet registered for MySQL HeatWave on AWS, you must do that first. See Section 2.2, “Signing Up”. ???
+
+After you sign up and create a DB System, you can access MySQL HeatWave on AWS from a MySQL client or application. A MySQL user account is required.
+
+In this lab, you will create and configure a new DB System. A HeatWave Cluster is created by default when creating a DB System.
+
+_Estimated Time:_ 10 minutes
 
 ### Objectives
 
 In this lab, you will be guided through the following tasks:
 
-- Create MySQL HeatWave Cluster
+- Login to MySQL Database Service console page
 - Create MySQL Database for HeatWave
 
 ### Prerequisites
@@ -18,7 +24,7 @@ In this lab, you will be guided through the following tasks:
 - An Oracle Trial or Paid Cloud Account
 - Some Experience with MySQL Shell
 
-## Task 1: Create MySQL HeatWave Cluster
+## Task 1: Login to MySQL Database Service console page
 
 1. Log on to MySQL Database Service Console
     1.1. On your web browser, go to:
@@ -78,6 +84,7 @@ In this lab, you will be guided through the following tasks:
 3. Once the instance is created, click to see the detailed information such as Host Name. You will use the Host Name to connect to the instance.
 
     ![CREATE](./images/create-db-complete.png "create db complete")
+
 
 ## Acknowledgements
 
