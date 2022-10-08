@@ -35,7 +35,7 @@ The following diagram illustrates MySQL HeatWave on AWS integration with Oracle 
 In this lab, you will be guided through the following steps:
 
 - Create MySQL HeatWave and Cluster
-- Access and Load your MySQL DB System
+- Connect to and Load your MySQL DB System
 - Provision HeatWave Cluster
 - Run queries in HeatWave Cluster
 - Monitor HeatWave

@@ -1,9 +1,8 @@
-# Access your MySQL DB System
+# Connect to and your MySQL DB System
 
 ## Introduction
 
-In this lab, you will create and configure ????
-
+In this lab, you will connect to your HeatWave Database using MySQL Shell. Then you will load Sample TPCH Data to the  HeatWave databse system.
 _Estimated Lab Time:_ 20 minutes
 
 ### Objectives
@@ -64,7 +63,6 @@ prompt, connect to MySQL
     **Note: It takes about 1  hour to load the 10G  tcph data  into the HeatWave Database**
 
     ![CONNECT](./images/mysqlshellloginexit.png "mysql shell login exit")
-
 
 3. View tpch database
 

@@ -2,7 +2,9 @@
 
 ## Introduction
 
-??????.
+The Performance tab in the MySQL HeatWave Console provides HeatWave Cluster and Workload
+performance data. An active HeatWave Cluster is required for cluster and workload performance
+monitoring.
 
 _Estimated Time:_ 10 minutes
 

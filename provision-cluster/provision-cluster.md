@@ -2,15 +2,14 @@
 
 ## Introduction
 
-??????.
+A HeatWave Cluster consists of a MySQL DB System and one or more HeatWave nodes. The MySQL DB
+System includes a HeatWave plugin that is responsible for cluster management, query scheduling, and returning query results to the MySQL DB System. HeatWave nodes store data in memory and process queries. When a HeatWave Cluster is enabled and data is loaded, queries that meet certain prerequisites are automatically offloaded from the MySQL DB System to the HeatWave Cluster for accelerated processing
 
 _Estimated Time:_ 10 minutes
 
 ### Objectives
 
-In this lab, you will be guided through the following task:
-
-- ???
+In this lab you will create and manage HeatWave Clusters.
 
 ### Prerequisites
 

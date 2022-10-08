@@ -2,7 +2,9 @@
 
 ## Introduction
 
-??????.
+In this lab you will use the  MySQL HeatWave Console Query Editor to running MySQL and
+HeatWave queries.
+Note
 
 _Estimated Time:_ 10 minutes
 
@@ -10,7 +12,8 @@ _Estimated Time:_ 10 minutes
 
 In this lab, you will be guided through the following task:
 
-- ????
+- Run Test Queries Iin HeatWave Cluster
+- Compare TPCH query performance with MySQL
 
 ### Prerequisites
 
