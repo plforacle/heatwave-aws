@@ -58,7 +58,7 @@ prompt, connect to MySQL
 2. Load TPCH sample data file (10GB of data)
 
      ```bash
-    <copy>util.loadDump("https://objectstorage.us-ashburn-1.oraclecloud.com/p/BJkZ0Es0tvt0O_19is3tu2XeYLraZ6NQ2ZqjbFFW0DxjvIrSIkxVRTZC3phsY_eD/n/idazzjlcjqzj/b/tpch_1024/o/tpch_1024/",{progressFile: "progress.json",threads: 16})</copy>
+    <copy>util.loadDump("https://objectstorage.us-ashburn-1.oraclecloud.com/p/Y5YBAp2U5NPEwFsgXLdWpHU_J-ZredOrg9vggNrusKr102AJa9NMsvUg-u3WSVqE/n/idazzjlcjqzj/b/tpch_bucket/o/tpch_1024/@.manifest.json",{progressFile: "progress.json",threads: 16})</copy>
     ```
 
     ![CONNECT](./images/mysqlshellloginexit.png "mysql shell login exit")
