@@ -9,7 +9,7 @@ _Estimated Time:_ 10 minutes
 
 ### Objectives
 
-In this lab you will create and manage HeatWave Clusters.
+In this lab you will create and manage your HeatWave Cluster and Nodes.
 
 ### Prerequisites
 

@@ -3,6 +3,7 @@
 ## Introduction
 
 In this lab, you will connect to your HeatWave Database using MySQL Shell. Then you will load Sample TPCH Data to the  HeatWave databse system.
+
 _Estimated Lab Time:_ 20 minutes
 
 ### Objectives
@@ -59,8 +60,6 @@ prompt, connect to MySQL
      ```bash
     <copy>util.loadDump("https://objectstorage.us-ashburn-1.oraclecloud.com/p/BJkZ0Es0tvt0O_19is3tu2XeYLraZ6NQ2ZqjbFFW0DxjvIrSIkxVRTZC3phsY_eD/n/idazzjlcjqzj/b/tpch_1024/o/tpch_1024/",{progressFile: "progress.json",threads: 16})</copy>
     ```
-
-    **Note: It takes about 1  hour to load the 10G  tcph data  into the HeatWave Database**
 
     ![CONNECT](./images/mysqlshellloginexit.png "mysql shell login exit")
 

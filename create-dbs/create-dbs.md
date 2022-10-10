@@ -4,11 +4,9 @@
 
 You can access MySQL HeatWave on AWS using the MySQL HeatWave Console (a browser-based interface).
 
-If you have not yet registered for MySQL HeatWave on AWS, you must do that first. See Section 2.2, “Signing Up”. ???
+If you have not yet registered for MySQL HeatWave on AWS, you must do that first.
 
-After you sign up and create a DB System, you can access MySQL HeatWave on AWS from a MySQL client or application. A MySQL user account is required.
-
-In this lab, you will create and configure a new DB System. A HeatWave Cluster is created by default when creating a DB System.
+After registering, create a DB System with an admin MySQL user account. A HeatWave Cluster is created by default when creating a DB System. Using the newly created MySQL user account, you can access MySQL HeatWave on AWS from a MySQL client or application.
 
 _Estimated Time:_ 10 minutes
 
