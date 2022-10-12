@@ -23,7 +23,13 @@ In this lab, you will be guided through the following task:
 
 ## Task 1: Run Test Queries Iin HeatWave Cluster
 
-Once data is loaded, you can run TPCH queries in the Query Editor in Workspaces.
+You can run the  queries in the Query Editor in Workspaces
+
+To confirm that the TPCH data has been loaded into the HeatWave Cluster, run the following select command:
+
+```bash
+<copy>SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'rapid_load_progress';<copy>  
+```
 
 ![LOAD](./images/workspace-tpch-query.png "workspace tpch query")
 
@@ -72,7 +78,7 @@ Here are a few TPCH queries:
             AND l_shipdate > DATE '1995-03-15'
             GROUP BY l_orderkey , o_orderdate , o_shippriority
             ORDER BY revenue DESC , o_orderdate
-            LIMIT 10; l</copy>
+            LIMIT 10; </copy>
     ```
 
 3. Q3
@@ -154,6 +160,5 @@ running on MySQL HeatWave vs MySQL
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Salil Pradhan, Principal Product Manager,
-Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2022
+- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022

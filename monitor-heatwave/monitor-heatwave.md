@@ -39,10 +39,10 @@ you use MySQL Shell Dump and Load utility.
 
 1. To dump data from on-premise MySQL: 
 
-    [Dump Date ](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-dump-instance-schema.html)
+    [Dump Date](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-dump-instance-schema.html)
 
 2. To load data to MySQL Database/HeatWave:
-    [Load Date ](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-load-dump.html)
+    [Load Date](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-load-dump.html)
 
 
 ## Import MySQL-compatible CSV formatted Data to MySQL HeatWave
@@ -69,13 +69,13 @@ you use MySQL Shell Dump and Load utility.
 
 ## Learn More
 
-* [Oracle Cloud Infrastructure MySQL Database Service Documentation ](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
-* [MySQL Database Documentation](https://www.MySQL.com)
+- [Oracle Cloud Infrastructure MySQL Database Service Documentation](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
+
+- [MySQL Database Documentation](https://www.MySQL.com)
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Salil Pradhan, Principal Product Manager,
-Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2022
+- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022

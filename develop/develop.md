@@ -208,7 +208,7 @@ Estimated Time: 5 minutes
 
 ## Acknowledgements
 
-- **Author** - Perside Foster, MySQL Solution Engineering, Harsh Nayak, MySQL Solution Engineering
+- **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Mandy Pang, MySQL Principal Product Manager,  Priscila Galvao, MySQL Solution Engineering, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, July 2022
+- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022

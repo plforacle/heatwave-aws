@@ -54,6 +54,5 @@ site while it is still in Beta. They should have been provided to you from the â
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Mandy Pang, Principal Product Manager,
-Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, September 2022
+- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022

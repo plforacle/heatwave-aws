@@ -68,13 +68,13 @@ click “Connect”
 
 ## Learn More
 
-* [Oracle Cloud Infrastructure MySQL Database Service Documentation ](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
-* [MySQL Database Documentation](https://www.MySQL.com)
+- [Oracle Cloud Infrastructure MySQL Database Service Documentation](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
+
+- [MySQL Database Documentation](https://www.MySQL.com)
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 
-- **Contributors** - Salil Pradhan, Principal Product Manager,
-Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, May 2022
+- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022

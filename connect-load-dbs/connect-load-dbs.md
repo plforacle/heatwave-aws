@@ -1,4 +1,4 @@
-# Connect to and your MySQL DB System
+# Connect to and Load your MySQL DB System
 
 ## Introduction
 
@@ -21,7 +21,9 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 1: Connect MySQL Shell to MySQL
 
-1. You can access the MySQL DB system using the host name and the admin user
+1. After the DB system reaches ‘Active’ state (green), click on the DB system name and copy your DB system end-point under the the ‘Host Name’ value.
+
+2. You can access the MySQL DB system using the host name and the admin user
 credential from any client machine. MySQL Shell 8.0 is required. On a command
 prompt, connect to MySQL
 
@@ -37,7 +39,9 @@ prompt, connect to MySQL
     MySQL Shell via classic protocol, use the option --mysql. For more details:
     [MySQL Shell guide] (<https://dev.mysql.com/doc/mysql-shell/8.0/en/mysqlsh.html>)
 
-2. You are now connected to MySQL and are ready to import data to MySQL.
+3. You are now connected to MySQL and are ready to import data to MySQL.
+
+    ![CONNECT](./images/mysqlshelllog.png "mysql shell login")
 
     To exit enter
 
@@ -45,7 +49,7 @@ prompt, connect to MySQL
     <copy>\q</copy>
     ```
 
-    ![CONNECT](./images/mysqlshellloginexit.png "mysql shell login exit")
+
 
 ## Task 2: Load Sample TPCH Data to MySQL DB System
 
@@ -65,17 +69,17 @@ prompt, connect to MySQL
 
 3. View tpch database
 
-a.
+    a.
 
-```bash
-<copy>\sql</copy>
-```
+    ```bash
+    <copy>\sql</copy>
+    ```
 
-b.
+    b.
 
-```bash
-<copy>SELECT table_name, table_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'tpch';</copy>
-```
+    ```bash
+    <copy>SELECT table_name, table_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'tpch';</copy>
+    ```
 
 ## Acknowledgements
 
