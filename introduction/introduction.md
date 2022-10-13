@@ -10,7 +10,7 @@ HeatWave is a massively parallel, high performance, in-memory query accelerator 
 
 Below is an example of a MySQL HeatWave on AWS deployment.
 
-![MySQL HeatWave on AWS deployment](./images/heatwave-aws-architect.png "heatwave aws architect")
+![MySQL HeatWave on AWS deployment](./images/hwonaws.png "hw on aws")
 
 ## About this Workshop
 
