@@ -111,7 +111,45 @@ Here are a few TPCH queries:
 
 ## Task 2: Compare TPCH query performance with MySQL
 
-![Under Construction](./images/underconstruction.png "under construction")
+1. Download the sample queries
+
+    ```bash
+    <copy> wget https://objectstorage.us-phoenix1.oraclecloud.com/n/mysqlpm/b/tpch/o/tpch_queries_rapid.sql
+     </copy> 
+    ```
+  
+    ```bash
+    <copy>   
+        wget https://objectstorage.us-phoenix1.oraclecloud.com/n/mysqlpm/b/tpch/o/tpch_queries_mysql.sql 
+    </copy>
+    ```
+
+2. Run each script in mysql shell.
+
+    ```bash
+    <copy>mysql -h<mysql ip addr> -uadmin -p<mysql admin password> -Dtpch < tpch_queries_rapid.sql
+    </copy>
+    ```
+
+    ```bash
+    <copy>mysql -h<mysql ip addr> -uadmin -p<mysql admin password> -Dtpch <tpch_queries_mysql.sql
+    </copy>
+    ```
+
+    ```bash
+    <copy>\sql</copy>
+    ```
+
+3. Each creates 2 output files: query result and runtime
+
+    a. rapid_rt.log and rapid_rt_profiles.log
+
+    b. mysql_rt.log and mysql_rt_profiles.log   
+
+4. run "diff -y rapid_rt_profiles.log mysql_rt_profiles.log", and you can see the runtime differences
+running on MySQL HeatWave vs MySQL
+
+![LOAD](./images/diff-table.png "diff table")
 
 ## Learn More
 
