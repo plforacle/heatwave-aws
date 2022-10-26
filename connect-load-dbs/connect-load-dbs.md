@@ -31,17 +31,16 @@ prompt, connect to MySQL
     <copy>mysqlsh <username>@<MySQL Host Name> --mysql</copy>
     ```
 
-    **For example:**
-
-    mysqlsh admin@xxxx.dbsystem.us-east-1.aws.mysqlheatwave.com --mysql
+    **For example:**   mysqlsh admin@xxxx.dbsystem.us-east-1.aws.mysqlheatwave.com --mysql
 
     **NOTE:** Currently only classic MySQL protocol is supported. To connect from
-    MySQL Shell via classic protocol, use the option --mysql. For more details:
-    [MySQL Shell guide] (<https://dev.mysql.com/doc/mysql-shell/8.0/en/mysqlsh.html>)
+    MySQL Shell via classic protocol, use the option --mysql. 
+    
+    For more details see: [MySQL Shell guide] (<https://dev.mysql.com/doc/mysql-shell/8.0/en/mysqlsh.html>)
 
 3. You are now connected to MySQL and are ready to import data to MySQL.
 
-    ![CONNECT](./images/mysqlshelllog.png "mysql shell login")
+    ![mysql shell login](./images/mysqlshelllog.png "mysql shell login")
 
     To exit enter
 
@@ -49,6 +48,7 @@ prompt, connect to MySQL
     <copy>\q</copy>
     ```
 
+    **NOTE:**  To change the prompt on shell and remove the long domain name from AWS, checkout:  [Shell prompt] (https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-prompt-themes.html)
 
 
 ## Task 2: Load Sample TPCH Data to MySQL DB System

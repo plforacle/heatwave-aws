@@ -36,11 +36,11 @@ list.
 
 4. Press “Create”
 
-    ![CREATE](./images/create-heatwave-cluster.png "create heatwave cluster")
+    ![create heatwave cluster](./images/create-heatwave-cluster.png "create heatwave cluster")
 
 5. Click the created HeatWave cluster to see the details
 
-    ![CREATE](./images/heatwave-cluster-details.png "heatwav cluster details")
+    ![heatwav cluster details](./images/heatwave-cluster-details.png "heatwav cluster details")
 
 ## Task 2: Load sample data to HeatWave Cluster from Workspaces
 
@@ -51,20 +51,19 @@ HeatWave. You can use “Workspaces” on the console to load data and run queri
 
     a. Go to “Workspaces” tab on the web console
 
-    b. Select the DB System that you want to connect to, enter the admin user credentials, and
-click “Connect”
+    b. Select the DB System that you want to connect to, enter the admin user credentials, and click “Connect”
 
-    ![LOAD](./images/heatwave-db-systtem-for-load.png "heatwav db system for load")
+    ![heatwav db system for load](./images/heatwave-db-systtem-for-load.png "heatwav db system for load")
 
     c. Select the tpch database on the left panel and press “Load” to load tables to HeatWave
 
     d. Press “Confirm Load” to load the data to HeatWave
 
-    ![LOAD](./images/heatwave-db-systtem-for-load-tpch.png "heatwav db system for load tpch")
+    ![heatwav db system for load tpch](./images/heatwave-db-systtem-for-load-tpch.png "heatwav db system for load tpch")
 
     e. Once the tables are loaded, you are ready to run queries in the Workspaces
 
-    ![LOAD](./images/tpch-loaded7.png "tpch loaded")
+    ![tpch loaded](./images/tpch-loaded7.png "tpch loaded")
 
 ## Learn More
 

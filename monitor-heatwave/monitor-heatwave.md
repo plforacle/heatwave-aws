@@ -25,11 +25,11 @@ In this lab, you will be guided through the following task:
 You can monitor HeatWave performance on the “Performance” tab on the web console.
 MySQL and HeatWave Cluster performance:
 
-![MONITOR](./images/performace-monitor.png "performance  monitor")
+![performance  monitor](./images/performace-monitor.png "performance  monitor")
 
 Query monitoring and performance:
 
-![MONITOR](./images/execution-monitor.png "execution  monitor")
+![execution  monitor](./images/execution-monitor.png "execution  monitor")
 
 ## Test MySQL HeatWave with Your Own Data
 
@@ -52,7 +52,7 @@ you use MySQL Shell Dump and Load utility.
     We recommend using MySQL Shell - Parallel Table Import Utility to import the data to
     MySQL. For more details on Parallel Table Import Utility, go
     here: 
-        [Dump Date ](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-paralleltable.html)
+        [Dump Date](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-paralleltable.html)
 
     **RECOMMENDATIONS:** Remove any indexes from your table schema to speed up data import
     speed. MySQL HeatWave does not require indexes to speedup query processing.

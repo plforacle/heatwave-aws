@@ -27,10 +27,10 @@ Estimated Time: 5 minutes
 2. In your pre-installed MySQL Workbench, configure a connection using the method "Standard TCP/IP over SSH" and use the credentials of the Compute instance for SSH.
 
     **MySQL Workbench Configuration for MDS HeatWAve**
-    ![MDS](./images/13workbench01.png " ")
+    ![workbench](./images/13workbench01.png "workbench ")
 
     **MySQL Workbench Use  for MDS HeatWAve**
-    ![MDS](./images/13workbench02.png " ")
+    ![workbench configuration](./images/13workbench02.png "workbench configuration")
 
 ## TASK 2: Install App Server (APACHE)
 

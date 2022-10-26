@@ -31,7 +31,7 @@ To confirm that the TPCH data has been loaded into the HeatWave Cluster, run the
 <copy>SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'rapid_load_progress';</copy>  
 ```
 
-![LOAD](./images/workspace-tpch-query.png "workspace tpch query")
+![workspace tpch query](./images/workspace-tpch-query.png "workspace tpch query")
 
 Here are a few TPCH queries:
 
