@@ -48,8 +48,22 @@ prompt, connect to MySQL
     <copy>\q</copy>
     ```
 
-    **NOTE:**  To change the prompt on shell and remove the long domain name from AWS, checkout:  [Shell prompt] (https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-prompt-themes.html)
+    **NOTE:**  When using MySQL Shell to test HW on AWS, your Shell prompt will display the AWS host name, which is really long.  
+    So, here is how to change the MySQL Shell prompt (see [mysql-shell-prompt-themes.html]  (https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-prompt-themes.html) )
 
+    - a. Copy one of the prompt files to your $HOME/.mysqlsh directory: 
+
+        ```bash
+        <copy> cp /usr/local/mysql-shell/share/mysqlsh/prompt/prompt_256.json $HOME/.mysqlsh/prompt_256.json</copy>
+        ```
+    - b. Edit the $HOME/.mysqlsh/prompt_256.json file, and do a find/replace for %host% - and change to %user%.
+    - c. Edit your $HOME/.zshrc file (Z-shell profile) and add this to the bottom: (change the user name to your name)
+    - b. Export MYSQLSH_PROMPT_THEME=“/users/tonydarnell/.mysqlsh/prompt_256.json”
+    - e. Reload the .zshrc file from the command line: . ./.zshrc
+
+    When you login to Shell, you will get this:  **MySQL  %ssh_user% > root:3306 ssl  JS >** 
+
+    Instead of something like this: **MySQL  %ssh_user% > 73d844c4-186d-4dc1-8322-e93a93f79d13.dbsystem.us-east-1.aws.cloud.mysql.com:3306 ssl  JS >**
 
 ## Task 2: Load Sample TPCH Data to MySQL DB System
 
