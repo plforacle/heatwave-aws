@@ -21,14 +21,14 @@ In this lab, you will be guided through the following task:
 - Some Experience with MySQL Shell
 - Completed Lab 3
 
-## Task 1: Run Test Queries Iin HeatWave Cluster
+## Task 1: Run Test Queries In HeatWave Cluster
 
 You can run the  queries in the Query Editor in Workspaces
 
 To confirm that the TPCH data has been loaded into the HeatWave Cluster, run the following select command:
 
 ```bash
-<copy>SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'rapid_load_progress';<copy>  
+<copy>SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'rapid_load_progress';</copy>  
 ```
 
 ![LOAD](./images/workspace-tpch-query.png "workspace tpch query")

@@ -42,7 +42,7 @@ list.
 
     ![CREATE](./images/heatwave-cluster-details.png "heatwav cluster details")
 
-## Task 2: Run TPCH Queries on HeatWave Cluster in Workspaces
+## Task 2: Load sample data to HeatWave Cluster from Workspaces
 
 Before you can run queries in HeatWave, you need to first load the data from MySQL to
 HeatWave. You can use “Workspaces” on the console to load data and run queries in HeatWave.
