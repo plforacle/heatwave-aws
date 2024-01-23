@@ -22,103 +22,57 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 1: Connect MySQL HeatWave
 
-1. After the DB system reaches **Active** state (green)
-    - a. Click on the **Workspaces** link
-    - b. Click on the **Connect to MySQL DB Ssytem** button
-    - c. Select your HeatWave DB System Name
-    - d. Enter your database username and password
+MySQL HeatWave provides an easy and quick way to import data from Amazon S3 in either MySQL dump file or text file (such as TSV, CSV) format.
+To import the sample data, let us connect to the DB System, MyDBSystem, which is now up and running.
+
+The DB system should show up as **Active** state (green). Perform the following tasks:
+
+1. Click on the **Workspaces** link
+2. Click on the **Connect to MySQL DB Ssytem** button
+3. Select your HeatWave DB System Name
+4. Enter your database username and password
 
     ![mysql heatwave login](./images/heatwave-login.png "mysql heatwave login")
 
-2. Import sample data from an Oracle-owned Amazon S3 bucket, which contains the database, airportdb, in MySQL dump file format
-    - a. Click on the **Data Imports** link
-    - b. Copy and paste the following command to the source entry
+## Task 2: Import Data from Amazon S3
 
-        ```bash
-        <copy>lakehouse</copy>
-        ```
+You will now import sample data from an Oracle-owned Amazon S3 bucket, which contains the database, airportdb, in MySQL dump file format. For authentication to Amazon S3, you are using the IAM roles, which you had earlier updated while creating the DB System. For authentication use the AWS user access keys.
 
-    - c. Click the **Import** button
-
-    ![mysql heatwave import](./images/heatwave-import.png "mysql heatwave import")
-
-
-2. You can access the MySQL DB system using the host name and the admin user
-credential from any client machine. MySQL Shell 8.0 is required. On a command
-prompt, connect to MySQL
+1. Click on the **Data Imports** link
+2. Copy and paste the following command to the source entry
 
     ```bash
-    <copy>mysqlsh <username>@<MySQL Host Name> --mysql</copy>
+    <copy>s3://oracle-mysql-heatwave-sample-data-us-east-1/published/airportdb/v1/mysqldump/</copy>
     ```
 
-    **For example:**   mysqlsh admin@xxxx.dbsystem.us-east-1.aws.mysqlheatwave.com --mysql
+3. Click the **Import** button
 
-    **NOTE:** Currently only classic MySQL protocol is supported. To connect from
-    MySQL Shell via classic protocol, use the option --mysql. 
-    
-    For more details see: [MySQL Shell guide] (<https://dev.mysql.com/doc/mysql-shell/8.0/en/mysqlsh.html>)
+    ![mysql heatwave import complete](./images/heatwave-import.png "mysql heatwave import complete")
 
-3. You are now connected to MySQL and are ready to import data to MySQL.
+4. The sample data is imported from S3 into the DB System in MySQL HeatWave on AWS. You can view the errors, warnings and info messages related to the import operation.
 
-    ![mysql shell login](./images/mysqlshelllog.png "mysql shell login")
+    ![mysql heatwave import](./images/heatwave-import-complete.png "mysql heatwave import")
 
-    To exit enter
+## Task 3: Load Data into HeatWave Cluster
 
-    ```bash
-    <copy>\q</copy>
-    ```
+The imported data is present in the DB System. you will now load the data into the HeatWave Cluster to accelerate query processing. You can select the schemas or tables to load into HeatWave, and get an estimate on the memory and time required to load the data.MySQL HeatWave optimizes the memory usage and load time of the data load operation by predicting the optimal degree of parallelism for the set of tables you have selected to load into HeatWave.
 
-    **NOTE:**  When using MySQL Shell to test HW on AWS, your Shell prompt will display the AWS host name, which is really long.  
-    So, here is how to change the MySQL Shell prompt (see [mysql-shell-prompt-themes.html]  (https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-prompt-themes.html) )
+1. Click the **Manage Data in HeatWave** button
+2. Click the **Load into HeatWave** button
+3. From the MySQL Auto Pilot screen click the **Load Tables** button
 
-    - a. Copy one of the prompt files to your $HOME/.mysqlsh directory: 
+    ![mysql heatwave load](./images/heatwave-load.png "mysql heatwave load")
 
-        ```bash
-        <copy> cp /usr/local/mysql-shell/share/mysqlsh/prompt/prompt_256.json $HOME/.mysqlsh/prompt_256.json</copy>
-        ```
-    - b. Edit the $HOME/.mysqlsh/prompt_256.json file, and do a find/replace for %host% - and change to %user%.
-    - c. Edit your $HOME/.zshrc file (Z-shell profile) and add this to the bottom: (change the user name to your name)
-    - b. Export MYSQLSH_PROMPT_THEME=“/users/tonydarnell/.mysqlsh/prompt_256.json”
-    - e. Reload the .zshrc file from the command line: . ./.zshrc
+To provide better visibility into storage and memory usage, the MySQL HeatWave console provides detailed information about the memory size of each table in the HeatWave cluster memory, load status, estimated rows, and so on.
 
-    When you login to Shell, you will get this:  **MySQL  %ssh_user% > root:3306 ssl  JS >** 
+- Final view of the load process:
 
-    Instead of something like this: **MySQL  %ssh_user% > 73d844c4-186d-4dc1-8322-e93a93f79d13.dbsystem.us-east-1.aws.cloud.mysql.com:3306 ssl  JS >**
+    ![mysql heatwave load complete](./images/heatwave-load-complete.png "mysql heatwave load complete")
 
-## Task 2: Load Sample TPCH Data to MySQL DB System
-
-1. Connect to the MySQL DB system
-
-    ```bash
-    <copy>mysqlsh <username>@<MySQL Host Name> --mysql</copy>
-    ```
-
-2. Load TPCH sample data file (10GB of data)
-
-     ```bash
-    <copy>util.loadDump("https://objectstorage.us-ashburn-1.oraclecloud.com/p/PzqvBnIYvbeBdREgv0u85H-XXOjXdX2UxrpkGI76BwfCvaqc06wFnEmlipzx9msR/n/idazzjlcjqzj/b/tpch/o/tpch10g/",{progressFile: "progress.json",threads: 16})</copy>
-    ```
-
-    ![CONNECT](./images/mysqlshellloginexit.png "mysql shell login exit")
-
-3. View tpch database
-
-    a.
-
-    ```bash
-    <copy>\sql</copy>
-    ```
-
-    b.
-
-    ```bash
-    <copy>SELECT table_name, table_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'tpch';</copy>
-    ```
+You may now **proceed to the next lab**
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-
-- **Contributors** - Mandy Pang, Principal Product Manager,
-Nick Mader, MySQL Global Channel Enablement & Strategy Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, September 2022
+- **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, January 2024

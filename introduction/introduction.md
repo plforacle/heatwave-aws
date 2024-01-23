@@ -42,6 +42,5 @@ Please make sure you can sign in to your MySQL HeatWave OCI Cloud Account.
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-
 - **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, January 2024
