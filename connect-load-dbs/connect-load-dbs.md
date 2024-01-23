@@ -1,8 +1,9 @@
-# Connect to and Load your MySQL DB System
+# Connect to and Load your MySQL HeatWave System
 
 ## Introduction
 
-In this lab, you will connect to your HeatWave Database using MySQL Shell. Then you will load Sample TPCH Data to the  HeatWave databse system.
+In this lab, you will connect to your HeatWave Database System and load data into it
+
 
 _Estimated Lab Time:_ 20 minutes
 
@@ -10,18 +11,37 @@ _Estimated Lab Time:_ 20 minutes
 
 In this lab, you will be guided through the following tasks:
 
-- Connect MySQL Shell to MySQL
-- Load Sample TPCH Data to MySQL DB System
+- Connect MySQL HeatWave
+- Import Data from Amazon S3
+- Load Data into HeatWave
 
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
 - Must Complete Lab 1
 
-## Task 1: Connect MySQL Shell to MySQL
+## Task 1: Connect MySQL HeatWave
 
-1. After the DB system reaches ‘Active’ state (green), click on the DB system name and copy your DB system end-point under the the ‘Host Name’ value.
+1. After the DB system reaches **Active** state (green)
+    - a. Click on the **Workspaces** link
+    - b. Click on the **Connect to MySQL DB Ssytem** button
+    - c. Select your HeatWave DB System Name
+    - d. Enter your database username and password
+
+    ![mysql heatwave login](./images/heatwave-login.png "mysql heatwave login")
+
+2. Import sample data from an Oracle-owned Amazon S3 bucket, which contains the database, airportdb, in MySQL dump file format
+    - a. Click on the **Data Imports** link
+    - b. Copy and paste the following command to the source entry
+
+        ```bash
+        <copy>lakehouse</copy>
+        ```
+
+    - c. Click the **Import** button
+
+    ![mysql heatwave import](./images/heatwave-import.png "mysql heatwave import")
+
 
 2. You can access the MySQL DB system using the host name and the admin user
 credential from any client machine. MySQL Shell 8.0 is required. On a command
