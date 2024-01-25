@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The Performance tab in the MySQL HeatWave Console provides HeatWave Cluster and Workload
-performance data. An active HeatWave Cluster is required for cluster and workload performance
-monitoring.
+The MySQL HeatWave console allows you to monitor the overall and per-node utilization of MySQL HeatWave hardware resources such as CPU, memory, and storage. It also provides a detailed breakdown of your resource consumption, such as data dictionary size, buffer pool size, and database connections.
 
 _Estimated Time:_ 10 minutes
 
@@ -12,70 +10,58 @@ _Estimated Time:_ 10 minutes
 
 In this lab, you will be guided through the following task:
 
-- ????
+- Monitor the Cluster
+- Monitor the Workload
+- Monitor the Autopilot Shape Advisor
 
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL Shell
-- Completed Lab 4
+- Completed Lab 3
 
-## Task 1: Monitor HeatWave Performance
+## Task 1: Monitor HeatWave Performance - Cluster
 
-You can monitor HeatWave performance on the “Performance” tab on the web console.
-MySQL and HeatWave Cluster performance:
+You can monitor HeatWave performance  by executing the following steps:
 
-![performance  monitor](./images/performace-monitor.png "performance  monitor")
+1. Click on the **Performance Tab** link
+2. Click the **Cluster** button
+3. Select the **MySQL HeatWave Cluster**
 
-Query monitoring and performance:
+    ![performance  monitor cluster](./images/performace-monitor-cluster.png "performance  monitor -cluster")
 
-![execution  monitor](./images/execution-monitor.png "execution  monitor")
+## Task 2: Monitor HeatWave Performance - Workload
 
-## Test MySQL HeatWave with Your Own Data
+The Workload tab display the most recent queries that were executed in HeatWave, allowing you to analyze when a query was executed, how long it took, and what the query actually does. Execute the following steps:
 
-Migrate Data from on-premise MySQL to MySQL HeatWave
-If you are migrating data from on-premise MySQL to MySQL HeatWave, we recommend that
-you use MySQL Shell Dump and Load utility.
+1. Click on the **Performance Tab** link
+2. Click the **Workload** button
+3. Select the **MySQL HeatWave Cluster**
 
-1. To dump data from on-premise MySQL: 
+    ![performance  monitor workload](./images/performace-monitor-workload.png "performance  monitor -workload")
 
-    [Dump Date](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-dump-instance-schema.html)
+## Task 3: Monitor HeatWave Performance - Autopilot Shape Advisor
 
-2. To load data to MySQL Database/HeatWave:
-    [Load Date](https://dev.mysql.com/doc/mysqlshell/8.0/en/mysql-shell-utilities-load-dump.html)
+Autopilot Shape Advisor analyses the buffer pool usage, workload activity, and access patterns, and then assesses the suitability of the current MySQL shape. The advisor collects statistics at varying intervals and creates a prediction every five minutes while it is active. If there is insufficient or no activity in a five-minute interval Autopilot Shape Advisor cannot make a prediction for that interval. Execute the following steps:
 
+1. Click on the **Performance Tab** link
+2. Click the **Autopilot Shape Advisor** button
+3. Select the **MySQL HeatWave Cluster**
 
-## Import MySQL-compatible CSV formatted Data to MySQL HeatWave
+    ![performance  monitor workload](./images/performace-monitor-autopilot.png "performance  monitor -workload")
 
-1. Import data to MySQL
+By making MySQL HeatWave natively available on AWS, you can very easily benefit from the only cloud database service that combines transactions, analytics, and machine learning services into one MySQL database, delivering real-time, secure analytics without the complexity, latency, and cost of ETL duplication—on AWS.
+MySQL HeatWave on AWS is optimized for AWS with a superior architecture that delivers higher performance and lower cost, as demonstrated by industry-standard benchmarks.
 
-    We recommend using MySQL Shell - Parallel Table Import Utility to import the data to
-    MySQL. For more details on Parallel Table Import Utility, go
-    here: 
-        [Dump Date](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-paralleltable.html)
-
-    **RECOMMENDATIONS:** Remove any indexes from your table schema to speed up data import
-    speed. MySQL HeatWave does not require indexes to speedup query processing.
-
-2. Load Data to HeatWave Cluster
-
-    Once data is imported in MySQL, you are ready to load data to HeatWave cluster. Please refer to
-    section Load sample data to HeatWave Cluster
-
-3. Run Queries on HeatWave Cluster
-
-    Similar to the example above, you can use EXPLAN PLAN to check if a query will be offloaded
-    to HeatWave Cluster: Run Queries on HeatWave Cluster  
+You may now **proceed to the next lab**
 
 ## Learn More
 
-- [Oracle Cloud Infrastructure MySQL Database Service Documentation](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
+- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
 
-- [MySQL Database Documentation](https://www.MySQL.com)
+- [MySQL Database Documentation](https://dev.mysql.com/)
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-
-- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022
+- **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, February 2024

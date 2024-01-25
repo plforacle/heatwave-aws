@@ -76,6 +76,13 @@ In this lab, you will be guided through the following tasks:
 
 You may now **proceed to the next lab**
 
+## Learn More
+
+- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+
+- [MySQL Database Documentation](https://dev.mysql.com/)
+
+
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering

@@ -16,7 +16,7 @@ In this lab, you will be guided through the following task:
 ### Prerequisites
 
 - An Oracle Trial or Paid Cloud Account
-- Completed Lab 3
+- Completed Lab 2
 
 ## Task 1: Run queries in  with  HeatWave turned on
 
@@ -53,13 +53,13 @@ Let us run the same query by turning off HeatWave to find out what query perform
 
     ![workspace query hetwave on](./images/workspace-query-heatwave-off.png "workspace query hetwave on")
 
-
 You may now **proceed to the next lab**
 
 ## Learn More
 
-* [Oracle Cloud Infrastructure MySQL Database Service Documentation ](https://docs.cloud.oracle.com/en-us/iaas/MySQL-database)
-* [MySQL Database Documentation](https://www.MySQL.com)
+- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+
+- [MySQL Database Documentation](https://dev.mysql.com/)
 
 ## Acknowledgements
 

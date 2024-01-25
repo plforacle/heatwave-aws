@@ -5,7 +5,7 @@
 In this lab, you will connect to your HeatWave Database System and load data into it
 
 
-_Estimated Lab Time:_ 20 minutes
+_Estimated Lab Time:_ 10 minutes
 
 ### Objectives
 
@@ -70,6 +70,12 @@ To provide better visibility into storage and memory usage, the MySQL HeatWave c
     ![mysql heatwave load complete](./images/heatwave-load-complete.png "mysql heatwave load complete")
 
 You may now **proceed to the next lab**
+
+## Learn More
+
+- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+
+- [MySQL Database Documentation](https://dev.mysql.com/)
 
 ## Acknowledgements
 

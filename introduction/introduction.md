@@ -11,7 +11,7 @@ MySQL HeatWave is now available on AWS. MySQL HeatWave’s native integration wi
 
 In this QuickStart Workshop, we will first create a DB System on HeatWave on AWS, and then we will import data into this DB system from an Oracle-owned Amazon S3 bucket, which contains the MySQL dump, airportdb. We will load the data from the DB System into HeatWave for accelerated query processing. HeatWave is a massively parallel, high performance, in-memory query accelerator that accelerates MySQL performance by orders of magnitude for analytics and mixed workloads. We will then run queries with and without HeatWave to find out what query performance we get when we use HeatWave. We will also see how to monitor the performance of a DB System and HeatWave Cluster.
 
-_Estimated Time:_ 2 hours
+_Estimated Time:_ 1.5 hours
 
 ## About Product/Technology
 
@@ -38,6 +38,12 @@ In this lab, you will be guided through the following steps:
 ## Prerequisites
 
 Please make sure you can sign in to your MySQL HeatWave OCI Cloud Account.
+
+## Learn More
+
+- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+
+- [MySQL Database Documentation](https://dev.mysql.com/)
 
 ## Acknowledgements
 
