@@ -19,17 +19,12 @@
         },
 
         {
-            "title": "Lab 3: Provision HeatWave Cluster",
-            "filename": "../../provision-cluster/provision-cluster.md"
-        },
-
-        {
-          "title": "Lab 4: Run queries in HeatWave Cluster",
+          "title": "Lab 3: Run queries in HeatWave",
           "filename": "../../run-queries/run-queries.md"
         },
 
         {
-          "title": "Lab 5:Monitor HeatWave",
+          "title": "Lab 4:Monitor HeatWave",
           "filename": "../../monitor-heatwave/monitor-heatwave.md"
         },
 

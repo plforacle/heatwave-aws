@@ -74,10 +74,10 @@ In this lab, you will be guided through the following tasks:
 
     ![create db complete](./images/create-db-complete.png "create db complete")
 
+You may now **proceed to the next lab**
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-
-- **Contributors** - Salil Pradhan, Product Manager, Samuel Rodrigues, Cloud Solution Engineer
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, October 2022
+- **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, February 2024
