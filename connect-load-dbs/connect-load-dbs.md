@@ -31,6 +31,7 @@ The DB system should show up as **Active** state (green). Perform the following 
 2. Click on the **Connect to MySQL DB Ssytem** button
 3. Select your HeatWave DB System Name
 4. Enter your database username and password
+5. Click the **Connect** button
 
     ![mysql heatwave login](./images/heatwave-login.png "mysql heatwave login")
 

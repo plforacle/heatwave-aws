@@ -24,15 +24,16 @@ On the Query Editor, under Database Objects, you can see the schemas and tables 
 
 Once the tables are loaded into HeatWave, you can run a query on HeatWave by performing the following steps:
 
-1. Enter the following code in the query notepad
+1. Click the **Query Editor** button
+2. Enter the following code in the query notepad
 
     ```bash
     <copy>USE airportdb;
     SELECT price, count(*) FROM booking WHERE price > 500 GROUP BY price ORDER BY price LIMIT 10;</copy> 
     ```
 
-2. Click the **Run Query** button to execute the code
-3. When you run the query with HeatWave, it took only 0.3730 seconds. 
+3. Click the **Run Query** button to execute the code
+4. When you run the query with HeatWave, it took only 0.3730 seconds. 
 
     ![workspace query hetwave on](./images/workspace-query-heatwave-on.png "workspace query hetwave on")
 
