@@ -17,7 +17,7 @@ _Estimated Time:_ 1.5 hours
 
 MySQL HeatWave on AWS delivers a true native experience for AWS customers. The console, control plane, and data plane completely reside in AWS and are responsible for managing the MySQL HeatWave database resources in AWS. The control plane communicates with Oracle Cloud Infrastructure (OCI) Identity for account management, and with OCI metering & billing for monitoring and managing the usage and expenses associated with the customer’s account.
 
-Once the user signs up for an OCI cloud account and registers their OCI account with MySQL HeatWave on AWS, the main interactions with the MySQL HeatWave service take place in AWS, through the service console hosted at cloud.mysql.com. The MySQL HeatWave console relies on the RESTful API provided by the MySQL HeatWave control plane to handle the user requests.
+Once the user signs up for an OCI cloud account and registers their OCI account with MySQL HeatWave on AWS, the main interactions with the MySQL HeatWave service take place in AWS, through the service console hosted at  [cloud.mysql.com](https://cloud.mysql.com/login). The MySQL HeatWave console relies on the RESTful API provided by the MySQL HeatWave control plane to handle the user requests.
 
 MySQL HeatWave on AWS hosts all of the customer databases components in a dedicated AWS account and strictly isolates them from the service control plane components and other database systems managed by the control plane.
 
@@ -30,18 +30,18 @@ The following diagram illustrates MySQL HeatWave on AWS integration with Oracle 
 In this lab, you will be guided through the following steps:
 
 - Create a DB System
-- Import Data from Amazon S3
-- Load Data into HeatWave
-- Run Queries on HeatWave
-- Monitor Performance
+- Import data from Amazon S3
+- Load data into HeatWave
+- Run queries on HeatWave
+- Monitor performance
 
 ## Prerequisites
 
-Please make sure you can sign in to your MySQL HeatWave OCI Cloud Account.
+Please make sure you can sign in to your MySQL HeatWave OCI Cloud Account. See [Sign Up](https://dev.mysql.com/doc/heatwave-aws/en/heatwave-aws-sign-procedure.html).
 
 ## Learn More
 
-- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+- [MySQL HeatWave on AWS Service Guide](https://dev.mysql.com/doc/heatwave-aws/en/)
 
 - [MySQL Database Documentation](https://dev.mysql.com/)
 

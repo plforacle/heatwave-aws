@@ -1,12 +1,8 @@
-# Create MySQL Database HeatWave and Cluster
+# Create MySQL HeatWave DB System  and add a HeatWave Cluster
 
 ## Introduction
 
-You can access MySQL HeatWave on AWS using the MySQL HeatWave Console (a browser-based interface).
-
-If you have not yet registered for MySQL HeatWave on AWS, you must do that first.
-
-After registering, create a DB System with an admin MySQL user account. A HeatWave Cluster is created by default when creating a DB System. Using the newly created MySQL user account, you can access MySQL HeatWave on AWS from a MySQL client or application.
+In this lab you will create a MySQL HeatWave DB System on AWS and add a HeatWave cluster to it.
 
 _Estimated Time:_ 15 minutes
 
@@ -14,29 +10,27 @@ _Estimated Time:_ 15 minutes
 
 In this lab, you will be guided through the following tasks:
 
-- Login to MySQL Database Service console page
-- Create MySQL Database for HeatWave and Cluster
+- Signin to MySQL HeatWave on AWS Service console page.
+- Create a MySQL HeatWave DB System and add on a HeatWave Cluster.
 
 ### Prerequisites
 
-- A MySQL HeatWave on AWS Trial or Paid Cloud Account
+- A MySQL HeatWave on AWS Trial or Paid Cloud Account. If you are a first-time user, follow the  [Sign Up](https://dev.mysql.com/doc/heatwave-aws/en/heatwave-aws-sign-procedure.html) instructions.
 
-## Task 1: Signin to MySQL Database Service console page
+## Task 1: Signin to MySQL HeatWave on AWS Service console page
 
-1. If you are a first-time user, follow the  [Sign Up](https://dev.mysql.com/doc/heatwave-aws/en/heatwave-aws-sign-procedure.html) instructions.
+1. Go to the [MySQL HeatWave Console](https://cloud.mysql.com).
 
-2. Go to the [MySQL HeatWave Console](https://cloud.mysql.com). 
-
-3. Enter your Cloud Account Name then hit the **Continue** button
+2. Enter your **Cloud Account Name** then click the **Continue** button.
     ![welcome](./images/welcome.png "welcome")
 
-4. Enter the OCI account credential. This is your email address and the passwordthen hit the **Sign In** button
+3. Enter the OCI account credentials. This is your email address and the password.  Click the **Sign In** button.
     ![oci info](./images/oci-info.png "oci info")
 
-5. Once you are logged in, you will see the MySQL HeatWave Page. Hit the **Create MySQL DB System** button
+4. Once you are logged in, you will see the MySQL HeatWave Page. click the **Create MySQL DB System** button.
     ![mds console](./images/mds-console.png "mds console")
 
-## Task 2: Create MySQL Database for HeatWave
+## Task 2: Create a MySQL HeatWave DB System and add on a HeatWave Cluster
 
 1. Create a MySQL DB system, which is the logical container for MySQL instances, and note the administrator username and password as you will need it to connect to the DB System
 
@@ -62,23 +56,23 @@ In this lab, you will be guided through the following tasks:
 
     - Since we have not imported data to the DB System yet, we can select the cluster size as 1. After you have imported data into the DB System, you can estimate the cluster size using MySQL Autopilot. MySQL Autopilot utilizes advanced machine learning techniques to estimate optimal cluster size by adaptively sampling and analyzing the data on your MySQL DB System and recommends an appropriate cluster size.
 
-    - Press the **Create** button to create the DB System.
+    - Click the **Create** button. to create the DB System.
 
     ![create dbcluster](./images/create-db-cluster.png "create dbcluster")
 
-5. The DB System build should complete in miuntes.
+5. The DB System build should be created in a few minutes.
 
     ![createdb building](./images/create-db-building.png "createdb building")
 
-6. Once the instance is created, click to see the detailed information.
+6. Once the instance is created, click the name of the DB System to see the detailed information.
 
     ![create db complete](./images/create-db-complete.png "create db complete")
 
-You may now **proceed to the next lab**
+You may now **proceed to the next lab**.
 
 ## Learn More
 
-- [MySQL HeatWave on AWS Service Guiden](https://dev.mysql.com/doc/heatwave-aws/en/)
+- [MySQL HeatWave on AWS Service Guide](https://dev.mysql.com/doc/heatwave-aws/en/)
 
 - [MySQL Database Documentation](https://dev.mysql.com/)
 
