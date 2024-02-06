@@ -32,7 +32,7 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 2: Create a MySQL HeatWave DB System and add on a HeatWave Cluster
 
-1. Create a MySQL DB system, which is the logical container for MySQL instances, and note the administrator username and password as you will need it to connect to the DB System
+1. Create a MySQL DB system, MyDBSystem, which is the logical container for MySQL instances, and note the administrator username and password as you will need it to connect to the DB System
 
     ![create db name](./images/create-db-name.png "create db name")
 
