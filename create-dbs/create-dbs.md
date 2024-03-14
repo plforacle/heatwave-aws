@@ -32,11 +32,11 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 2: Create a MySQL HeatWave DB System and add on a HeatWave Cluster
 
-1. Create a MySQL DB system, MyDBSystem, which is the logical container for MySQLHeatWave instances, and note the administrator username and password as you will need it to connect to the DB System
+1. Create a MySQL DB system, MyDBSystem, which is the logical container for MySQL HeatWave instances, and note the administrator username and password as you will need it to connect to the DB System
 
     ![create db name](./images/create-db-name.png "create db name")
 
-2. Select a shape of the DB System. A shape determines the number of OCPUs, amount of memory, and other resources that are allocated within a DB system. Each shape can have a couple of configurations. Ensure that you select a configuration that supports HeatWave.
+2. Select a shape for MySQL. A shape determines the number of vCPUs, amount of memory, and other resources that are allocated within a DB system. Each shape can have a couple of configurations. Ensure that you select a configuration that supports HeatWave.
 
     ![create db config](./images/create-db-config.png "create db config")
 
@@ -50,15 +50,15 @@ In this lab, you will be guided through the following tasks:
 
     ![create db network](./images/create-db-network.png "create db network")
 
-4. Now we will provision a HeatWave cluster. You can select the HeatWave cluster size, that is, the number of HeatWave nodes present in the cluster. The cluster size depends on the tables and columns that are to be loaded into HeatWave, and the compression achieved in memory for this data. The maximum number of HeatWave nodes you can provision is 128.
+4. Now we will provision a HeatWave cluster. You can select the HeatWave cluster size, that is, the number of HeatWave nodes present in the cluster. The cluster size depends on the tables and columns that are to be loaded into HeatWave, and the compression achieved in memory for this data.
 
-    - Since we have not imported data to the DB System yet, we can select the cluster size as 1. We will use the default (1 node of HeatWave.16GB) here. For cases where you have data already imported to MySQL, you can estimate the cluster size using MySQL Autopilot. MySQL Autopilot utilizes advanced machine learning techniques to estimate optimal cluster size by adaptively sampling and analyzing the data on your MySQL and recommends an appropriate cluster size.
+    - We will use the default (1 node of HeatWave.16GB) here. For cases where you have data already imported to MySQL, you can estimate the cluster size using MySQL Autopilot. MySQL Autopilot utilizes advanced machine learning techniques to estimate optimal cluster size by adaptively sampling and analyzing the data on your MySQL and recommends an appropriate cluster size.
 
     - Click the **Create** button. to create the DB System.
 
     ![create dbcluster](./images/create-db-cluster.png "create dbcluster")
 
-5. The DB System build should be created in a few minutes.
+5. The DB System should be created in a few minutes.
 
     ![createdb building](./images/create-db-building.png "createdb building")
 

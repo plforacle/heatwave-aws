@@ -35,7 +35,7 @@ The DB system should show up as **Active** state (green). Perform the following 
 
 ## Task 2: Import data from Amazon S3
 
-You will now import sample data from an Oracle-owned Amazon S3 bucket, which contains the database, airportdb, in MySQL dump file format. For authentication to Amazon S3, you are using the IAM roles, which you had earlier updated while creating the DB System. For authentication use the AWS user access keys.
+You will now import sample data from an Amazon S3 bucket, which contains the database, airportdb, in MySQL dump file format.
 
 1. Click the **Data Imports** link.
 2. Copy and paste the following to in **S3 URI**.

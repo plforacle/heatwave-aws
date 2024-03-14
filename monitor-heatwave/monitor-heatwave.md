@@ -58,8 +58,6 @@ Autopilot Shape Advisor analyses the buffer pool usage, workload activity, and a
 By making MySQL HeatWave natively available on AWS, you can very easily benefit from the only cloud database service that combines transactions, analytics, and machine learning services into one MySQL database, delivering real-time, secure analytics without the complexity, latency, and cost of ETL duplication—on AWS.
 MySQL HeatWave on AWS is optimized for AWS with a superior architecture that delivers higher performance and lower cost, as demonstrated by industry-standard benchmarks.
 
-You may now **proceed to the next lab**.
-
 ## Learn More
 
 - [MySQL HeatWave on AWS Service Guide](https://dev.mysql.com/doc/heatwave-aws/en/)
