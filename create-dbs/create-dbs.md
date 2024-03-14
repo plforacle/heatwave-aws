@@ -24,7 +24,7 @@ In this lab, you will be guided through the following tasks:
 2. Enter your **Cloud Account Name** then click the **Continue** button.
     ![welcome](./images/welcome.png "welcome")
 
-3. Enter the OCI account credentials. This is your email address and the password.  Click the **Sign In** button.
+3. Enter the OCI account credentials. This is your User Name and Password.  Click the **Sign In** button.
     ![oci info](./images/oci-info.png "oci info")
 
 4. Once you are logged in, you will see the MySQL HeatWave Page. click the **Create MySQL DB System** button.
@@ -32,13 +32,11 @@ In this lab, you will be guided through the following tasks:
 
 ## Task 2: Create a MySQL HeatWave DB System and add on a HeatWave Cluster
 
-1. Create a MySQL DB system, MyDBSystem, which is the logical container for MySQL instances, and note the administrator username and password as you will need it to connect to the DB System
+1. Create a MySQL DB system, MyDBSystem, which is the logical container for MySQLHeatWave instances, and note the administrator username and password as you will need it to connect to the DB System
 
     ![create db name](./images/create-db-name.png "create db name")
 
 2. Select a shape of the DB System. A shape determines the number of OCPUs, amount of memory, and other resources that are allocated within a DB system. Each shape can have a couple of configurations. Ensure that you select a configuration that supports HeatWave.
-
-    - You have the flexibility to select an innovation (8.1.0, 8.2.0, and so on) or a bug fix (8.0.32, 8.0.33, and so on) MySQL version as per your application and environment needs. The innovation releases contain the latest features and improvements, and the bug fix releases contain only necessary fixes, so they reduce the risks associated with changes in the database software's behavior. Both releases are production-grade quality.
 
     ![create db config](./images/create-db-config.png "create db config")
 
@@ -54,7 +52,7 @@ In this lab, you will be guided through the following tasks:
 
 4. Now we will provision a HeatWave cluster. You can select the HeatWave cluster size, that is, the number of HeatWave nodes present in the cluster. The cluster size depends on the tables and columns that are to be loaded into HeatWave, and the compression achieved in memory for this data. The maximum number of HeatWave nodes you can provision is 128.
 
-    - Since we have not imported data to the DB System yet, we can select the cluster size as 1. After you have imported data into the DB System, you can estimate the cluster size using MySQL Autopilot. MySQL Autopilot utilizes advanced machine learning techniques to estimate optimal cluster size by adaptively sampling and analyzing the data on your MySQL DB System and recommends an appropriate cluster size.
+    - Since we have not imported data to the DB System yet, we can select the cluster size as 1. We will use the default (1 node of HeatWave.16GB) here. For cases where you have data already imported to MySQL, you can estimate the cluster size using MySQL Autopilot. MySQL Autopilot utilizes advanced machine learning techniques to estimate optimal cluster size by adaptively sampling and analyzing the data on your MySQL and recommends an appropriate cluster size.
 
     - Click the **Create** button. to create the DB System.
 
@@ -81,4 +79,4 @@ You may now **proceed to the next lab**.
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 - **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, February 2024
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024

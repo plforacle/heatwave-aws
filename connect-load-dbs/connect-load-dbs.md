@@ -80,4 +80,4 @@ You may now **proceed to the next lab**.
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 - **Contributors** - Mandy Pang, Senior Principal Product Manager, Aijaz Fatima, Product Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, February 2024
+- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, March 2024
