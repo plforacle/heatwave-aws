@@ -88,7 +88,7 @@ Let us run the same query by turning off HeatWave to find out what query perform
         airline.airlinename
     ORDER BY
         airline.airlinename, avg_age
-    LIMIT 10\G</copy>
+    LIMIT 10;</copy>
     ```
 
     ![heatwave qeury average age explain](./images/heatwave-qeury-explain.png "heatwave qeury average age explain")
